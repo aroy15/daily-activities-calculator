@@ -1,0 +1,12 @@
+.d-flex{
+  display:flex;
+}
+.gap-20{
+  gap:20px;
+}
+.align-i-center{
+  align-items: center;
+}
+.justify-between{
+  justify-content: space-between;
+}
