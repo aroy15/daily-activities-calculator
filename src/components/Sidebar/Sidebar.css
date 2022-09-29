@@ -68,17 +68,17 @@
     color:var(--bg-color-card)
 }
 
-.exercise-details{
+.activity-details{
     margin-bottom:40px;
 }
 
-.exercise-details .time-exr-br{
+.activity-details .time-exr-br{
     padding:12px;
     font-weight: 500;
     background-color: var(--bg-color);
     border-radius: var(--radius);
     margin-bottom:20px;
 }
-.exercise-details .times{
+.activity-details .times{
     color:#9DACC1;
 }

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import profileImage from '../../image/anjon-profile.jpg';
 
-const Sidebar = () => {
+const Sidebar = ({times}) => {
     return (
         <div className='sidebar-inner'>
             <div className="profile d-flex align-i-center gap-20">
@@ -38,9 +38,9 @@ const Sidebar = () => {
                     <div className="break-item">50s</div>
                 </div>
             </div>
-            <div className="exercise-details">
-                <h3>Exercise Details</h3>
-                <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Exercise time <span className="times">200 second</span></div>
+            <div className="activity-details">
+                <h3>Activity Details</h3>
+                <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Activity time <span className="times">{times} second</span></div>
                 <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Break time <span className="times">15 second</span></div>
             </div>
             <button className='common-btn'>Activity Completed</button>
