@@ -56,14 +56,14 @@ const Sidebar = ({times}) => {
                 <h3>Add A Break</h3>
                 <div className="break-inner d-flex align-i-center">
                     {
-                        breakTimes.map((breakTime, index) => <div key={`id${index}`} onClick={()=>breakTimeFunc(breakTime)} className="break-item">{breakTime}s</div>)
+                        breakTimes.map((breakTime, index) => <div key={`id${index}`} onClick={()=>breakTimeFunc(breakTime)} className="break-item">{breakTime}m</div>)
                     }
                 </div>
             </div>
             <div className="activity-details">
                 <h3>Activity Details</h3>
-                <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Activity time <span className="times">{times} second</span></div>
-                <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Break time <span className="times">{addTime} second</span></div>
+                <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Activity time <span className="times">{times} minute</span></div>
+                <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Break time <span className="times">{addTime} minute</span></div>
             </div>
             <button className='common-btn' onClick={popupNotification}>Activity Completed</button>
             <ToastContainer></ToastContainer>

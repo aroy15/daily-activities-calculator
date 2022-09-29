@@ -7,7 +7,7 @@ const ActivitiesCard = ({activity, addToList}) => {
         <div className='card'>
             <img src={image} alt={workName} />
             <h3>{workName}</h3>
-            <p>Time required: {time}s</p>
+            <p>Time required: {time}min.</p>
             <button className='common-btn' onClick={()=>addToList(time)}>Add to list</button>
         </div>
     );
