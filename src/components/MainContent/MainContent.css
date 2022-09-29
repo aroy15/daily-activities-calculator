@@ -2,14 +2,41 @@
     display:grid;
     grid-template-columns:3fr 1fr;
     min-height:100vh;
-  }
+    background: var(--bg-color);
+}
+.sidebar{
+  background-color: var(--bg-color-card);
+}
+.main_content{
+  padding: 50px 100px;
+}
+.card_wrapper{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+}
+ @media (max-width:1199px){
   .main_content{
-    background: #F2F4FA;
-    padding: 50px 100px;
+    padding: 50px;
   }
   .card_wrapper{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    gap:20px;
+    grid-template-columns: repeat(2,1fr);
   }
- 
+ }
+ @media (max-width:991px){
+  .card_wrapper{
+    grid-template-columns: 1fr;
+  }
+ }
+  @media (max-width:767px){
+    .container{
+      grid-template-columns:1fr;
+    }
+    .main_content{
+      padding: 50px 20px;
+    }
+    .sidebar{
+      margin:0 20px 50px 20px; 
+      border-radius: var(--radius);
+    }
+ }
