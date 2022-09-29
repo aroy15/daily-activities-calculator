@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Header from '../Header/Header';
+import './MainContent.css'
 
 const MainContent = () => {
     const [activities, setActivities] = useState([]);
