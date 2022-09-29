@@ -7,20 +7,6 @@
     width:100%;
     border-radius: 10px;
   }
-  .card-btn{
-    width:100%;
-    background:purple;
-    padding:10px;
-    border:none;
-    font-family: inherit;
-    font-size:18px;
-    color:#ffffff;
-    font-style: italic;
-    border-radius: 5px;
-    cursor: pointer;
+  .card p{
     font-weight: 500;
-    transition: 0.3s;
-  }
-  .card-btn:hover{
-    background: dodgerblue;
   }

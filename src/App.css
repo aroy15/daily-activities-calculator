@@ -1,10 +1,14 @@
 
 :root{
-  --text-color: #C3CCD3;
+  --text-color: #191C32;
   --primary-color:purple;
   --primary-hover: dodgerblue;
   --bg-color:#F2F4FA;
   --bg-color-card: #ffffff;
+  --radius:15px;
+}
+body{
+  color:var(--text-color);
 }
 .d-flex{
   display:flex;
@@ -17,4 +21,22 @@
 }
 .justify-between{
   justify-content: space-between;
+}
+.common-btn {
+  width: 100%;
+  background: purple;
+  padding: 10px;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  color: #ffffff;
+  font-style: italic;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.common-btn:hover{
+  background: dodgerblue;
 }

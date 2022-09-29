@@ -14,6 +14,36 @@ const Sidebar = () => {
                     <p className='address'><FontAwesomeIcon icon={faLocationDot} /> Chattogram, Bangladesh</p>
                 </div>
             </div>
+            <div className="body-info d-flex align-i-center justify-between">
+                <div>
+                    <div className='b-info-no'>75<span className='unit'>kg</span></div>
+                    <p>Weight</p>
+                </div>
+                <div>
+                    <div className='b-info-no'>6.5</div>
+                    <p>Height</p>
+                </div>
+                <div>
+                    <div className='b-info-no'>28<span className='unit'>yrs</span></div>
+                    <p>Age</p>
+                </div>
+            </div>
+            <div className="break-info">
+                <h3>Add A Break</h3>
+                <div className="break-inner d-flex align-i-center justify-between">
+                    <div className="break-item">10m</div>
+                    <div className="break-item">20m</div>
+                    <div className="break-item">30m</div>
+                    <div className="break-item">40m</div>
+                    <div className="break-item">50m</div>
+                </div>
+            </div>
+            <div className="exercise-details">
+                <h3>Exercise Details</h3>
+                <div className="time-exr-br d-flex align-i-center justify-between">Exercise time <span className="times">200 minute</span></div>
+                <div className="time-exr-br d-flex align-i-center justify-between">Break time <span className="times">15 minute</span></div>
+            </div>
+            <button className='common-btn'>Activity Completed</button>
         </div>
     );
 };
