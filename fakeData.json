@@ -1,0 +1,38 @@
+[
+    {
+        "id":"activities1",
+        "workName":"Walking",
+        "time":50,
+        "image":"https://raw.githubusercontent.com/aroy15/image-store/master/walking.jpg"
+    },
+    {
+        "id":"activities2",
+        "workName":"Breakfast",
+        "time":20,
+        "image":"https://raw.githubusercontent.com/aroy15/image-store/master/breakfast.jpg"
+    },
+    {
+        "id":"activities3",
+        "workName":"Swimming",
+        "time":40,
+        "image":"https://raw.githubusercontent.com/aroy15/image-store/master/swimming.jpg"
+    },
+    {
+        "id":"activities4",
+        "workName":"Preparing for job",
+        "time":45,
+        "image":"https://raw.githubusercontent.com/aroy15/image-store/master/job-preparation.jpg"
+    },
+    {
+        "id":"activities5",
+        "workName":"Taking Lunch",
+        "time":25,
+        "image":"https://raw.githubusercontent.com/aroy15/image-store/master/lunch.jpg"
+    },
+    {
+        "id":"activities6",
+        "workName":"Rest after Lunch",
+        "time":35,
+        "image":"https://raw.githubusercontent.com/aroy15/image-store/master/rest.jpg"
+    }
+]
