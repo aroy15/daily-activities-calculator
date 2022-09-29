@@ -15,9 +15,11 @@ const MainContent = () => {
         <div className="container">
             <div className="main_content">
                 <Header></Header>
-                {
-                    activities.map(activity => <ActivitiesCard key={activity.id} activity={activity}></ActivitiesCard>)
-                }
+                <div className="card_wrapper">
+                    {
+                        activities.map(activity => <ActivitiesCard key={activity.id} activity={activity}></ActivitiesCard>)
+                    }
+                </div>
             </div>
             <div className="sidebar">
                 sidebar
