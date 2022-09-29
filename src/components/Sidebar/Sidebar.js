@@ -4,6 +4,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import profileImage from '../../image/anjon-profile.jpg';
 import { getDataFromBD, setDataToDB } from '../fakeDB/fakeDB';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Sidebar = ({times}) => {    
     const [addTime, setAddTime] = useState(0);
@@ -20,7 +22,12 @@ const Sidebar = ({times}) => {
        }      
     },[addTime]);
 
-    
+    // React Toast
+    const popupNotification = () =>{
+        toast.success("Activity has been completed!!",{
+            position: "top-center"
+        })
+    }
 
     return (
         <div className='sidebar-inner'>
@@ -63,7 +70,8 @@ const Sidebar = ({times}) => {
                 <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Activity time <span className="times">{times} second</span></div>
                 <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Break time <span className="times">{addTime} second</span></div>
             </div>
-            <button className='common-btn'>Activity Completed</button>
+            <button className='common-btn' onClick={popupNotification}>Activity Completed</button>
+            <ToastContainer></ToastContainer>
         </div>
     );
 };
