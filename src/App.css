@@ -1,3 +1,11 @@
+
+:root{
+  --text-color: #C3CCD3;
+  --primary-color:purple;
+  --primary-hover: dodgerblue;
+  --bg-color:#F2F4FA;
+  --bg-color-card: #ffffff;
+}
 .d-flex{
   display:flex;
 }
