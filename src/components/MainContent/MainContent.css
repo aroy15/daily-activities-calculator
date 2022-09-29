@@ -1,6 +1,7 @@
 .container{
     display:grid;
     grid-template-columns:3fr 1fr;
+    min-height:100vh;
   }
   .main_content{
     background: #F2F4FA;

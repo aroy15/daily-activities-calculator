@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import ActivitiesCard from '../ActivitiesCard/ActivitiesCard';
 import Header from '../Header/Header';
 import './MainContent.css'
 
@@ -7,13 +8,16 @@ const MainContent = () => {
     useEffect(()=>{
         fetch('fakeData.json')
         .then(res => res.json())
-        .then(data => console.log(data))
+        .then(data => setActivities(data))
     },[]);
 
     return (
         <div className="container">
             <div className="main_content">
                 <Header></Header>
+                {
+                    activities.map(activity => <ActivitiesCard key={activity.id} activity={activity}></ActivitiesCard>)
+                }
             </div>
             <div className="sidebar">
                 sidebar
@@ -21,5 +25,4 @@ const MainContent = () => {
         </div>
     );
 };
-
 export default MainContent;
