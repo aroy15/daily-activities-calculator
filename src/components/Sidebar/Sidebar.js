@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Sidebar.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 import profileImage from '../../image/anjon-profile.jpg';
+import { getDataFromBD, setDataToDB } from '../fakeDB/fakeDB';
 
 const Sidebar = ({times}) => {    
     const [addTime, setAddTime] = useState(0);
@@ -10,7 +11,17 @@ const Sidebar = ({times}) => {
     
     const breakTimeFunc = breakTime =>{
         setAddTime(breakTime);
+        setDataToDB(breakTime)
     }
+    useEffect(()=>{        
+       const storedTime = getDataFromBD(); 
+       if(storedTime){
+        setAddTime(storedTime);
+       }      
+    },[addTime]);
+
+    
+
     return (
         <div className='sidebar-inner'>
             <div className="profile d-flex align-i-center gap-20">
