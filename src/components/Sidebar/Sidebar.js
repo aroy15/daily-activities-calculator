@@ -9,7 +9,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Sidebar = ({times}) => {    
     const [addTime, setAddTime] = useState(0);
-    const breakTimes = [20,10,30,40,50];
+    const breakTimes = [20,10,30,40];
     
     const breakTimeFunc = breakTime =>{
         setAddTime(breakTime);
@@ -54,15 +54,10 @@ const Sidebar = ({times}) => {
             </div>
             <div className="break-info">
                 <h3>Add A Break</h3>
-                <div className="break-inner d-flex align-i-center justify-between">
+                <div className="break-inner d-flex align-i-center">
                     {
                         breakTimes.map((breakTime, index) => <div key={`id${index}`} onClick={()=>breakTimeFunc(breakTime)} className="break-item">{breakTime}s</div>)
                     }
-                    {/* <div className="break-item">20s</div>
-                    <div className="break-item">10s</div>
-                    <div className="break-item">30s</div>
-                    <div className="break-item">40s</div>
-                    <div className="break-item">50s</div> */}
                 </div>
             </div>
             <div className="activity-details">

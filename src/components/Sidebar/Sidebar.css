@@ -50,6 +50,8 @@
     border-radius: var(--radius);
     margin-bottom:40px;
     margin-top:15px;
+    gap:20px;
+    justify-content: center;
 }
 .break-item{
     min-width:45px;
@@ -81,4 +83,14 @@
 }
 .activity-details .times{
     color:#9DACC1;
+}
+
+@media (max-width:480px) {
+    .break-inner{
+        gap:10px;
+    }
+    .break-item{
+        min-width:35px;
+        height:35px;
+    }
 }

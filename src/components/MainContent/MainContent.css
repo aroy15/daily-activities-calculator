@@ -1,4 +1,7 @@
 .container{
+  background: #dfe1e4;
+}
+.main_content_container{
     display:grid;
     grid-template-columns:3fr 1fr;
     min-height:100vh;
@@ -29,7 +32,7 @@
   }
  }
   @media (max-width:767px){
-    .container{
+    .main_content_container{
       grid-template-columns:1fr;
     }
     .main_content{

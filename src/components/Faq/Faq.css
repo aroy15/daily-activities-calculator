@@ -1,0 +1,20 @@
+.faq_content{
+    padding:60px 20px;
+    max-width:900px;
+    margin:0 auto;
+
+}
+.faq_content h2{
+    text-align:center;
+    color:var(--primary-color);
+    font-size:40px;
+    padding-top:0;
+    margin-top:0;
+}
+.faq_item{
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    margin-bottom:20px;
+    background-color: var(--bg-color-card);
+}

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ActivitiesCard from '../ActivitiesCard/ActivitiesCard';
+import Faq from '../Faq/Faq';
 import Header from '../Header/Header';
 import Sidebar from '../Sidebar/Sidebar';
 import './MainContent.css'
@@ -16,18 +17,21 @@ const MainContent = () => {
         setTimes(times+time);
     }
     return (
-        <div className="container">
-            <div className="main_content">
-                <Header></Header>
-                <div className="card_wrapper">
-                    {
-                        activities.map(activity => <ActivitiesCard key={activity.id} activity={activity} addToList={addToList}></ActivitiesCard>)
-                    }
+        <div className='container'>
+            <div className="main_content_container">
+                <div className="main_content">
+                    <Header></Header>
+                    <div className="card_wrapper">
+                        {
+                            activities.map(activity => <ActivitiesCard key={activity.id} activity={activity} addToList={addToList}></ActivitiesCard>)
+                        }
+                    </div>
+                </div>
+                <div className="sidebar">
+                    <Sidebar times={times}></Sidebar>
                 </div>
             </div>
-            <div className="sidebar">
-                <Sidebar times={times}></Sidebar>
-            </div>
+            <Faq></Faq>
         </div>
     );
 };
