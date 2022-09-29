@@ -7,7 +7,7 @@ const ActivitiesCard = ({activity}) => {
         <div className='card'>
             <img src={image} alt={workName} />
             <h3>{workName}</h3>
-            <p>Time required: {time}m</p>
+            <p>Time required: {time}s</p>
             <button className='common-btn'>Add to list</button>
         </div>
     );

@@ -31,17 +31,17 @@ const Sidebar = () => {
             <div className="break-info">
                 <h3>Add A Break</h3>
                 <div className="break-inner d-flex align-i-center justify-between">
-                    <div className="break-item">10m</div>
-                    <div className="break-item">20m</div>
-                    <div className="break-item">30m</div>
-                    <div className="break-item">40m</div>
-                    <div className="break-item">50m</div>
+                    <div className="break-item">20s</div>
+                    <div className="break-item">10s</div>
+                    <div className="break-item">30s</div>
+                    <div className="break-item">40s</div>
+                    <div className="break-item">50s</div>
                 </div>
             </div>
             <div className="exercise-details">
                 <h3>Exercise Details</h3>
-                <div className="time-exr-br d-flex align-i-center justify-between">Exercise time <span className="times">200 minute</span></div>
-                <div className="time-exr-br d-flex align-i-center justify-between">Break time <span className="times">15 minute</span></div>
+                <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Exercise time <span className="times">200 second</span></div>
+                <div className="time-exr-br d-flex gap-20 align-i-center justify-between">Break time <span className="times">15 second</span></div>
             </div>
             <button className='common-btn'>Activity Completed</button>
         </div>
