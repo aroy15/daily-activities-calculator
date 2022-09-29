@@ -2,7 +2,7 @@ import React from 'react';
 import './ActivitiesCard.css';
 
 const ActivitiesCard = ({activity, addToList}) => {
-    const {id,workName,time,image} = activity;
+    const {workName,time,image} = activity;
     return (
         <div className='card'>
             <img src={image} alt={workName} />

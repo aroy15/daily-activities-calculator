@@ -1,5 +1,3 @@
-import React from 'react';
-
 const setDataToDB = data => {
     localStorage.setItem('break-time',data);
 };
