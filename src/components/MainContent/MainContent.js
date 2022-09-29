@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ActivitiesCard from '../ActivitiesCard/ActivitiesCard';
 import Header from '../Header/Header';
+import Sidebar from '../Sidebar/Sidebar';
 import './MainContent.css'
 
 const MainContent = () => {
@@ -22,7 +23,7 @@ const MainContent = () => {
                 </div>
             </div>
             <div className="sidebar">
-                sidebar
+                <Sidebar></Sidebar>
             </div>
         </div>
     );
